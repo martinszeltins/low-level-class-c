@@ -5,11 +5,11 @@
 
 #include "include/point.h"
 
-typedef struct {
-    Point parent;
+struct ColoredPoint {
+    struct Point parent;
     int color;
-} ColoredPoint;
+};
 
-void colored_point_new(ColoredPoint * me, int x, int y, int color);
+void colored_point_new(struct ColoredPoint * me, int x, int y, int color);
 
 #endif

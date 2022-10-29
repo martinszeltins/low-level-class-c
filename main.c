@@ -3,7 +3,7 @@
 #include "include/colored_point.h"
 
 int main() {
-    Point foo, bar, tar;
+    struct Point foo, bar, tar;
     int dist;
     point_new(&foo, 0, 0);
     point_new(&bar, 1, 1);
@@ -15,8 +15,8 @@ int main() {
     printf("%d", dist);
 
     int dist2;
-    ColoredPoint colored_point, another_colored_point;
+    struct ColoredPoint colored_point, another_colored_point;
 
     colored_point_new(&colored_point, 0, 2, RED);
-    dist2 = point_get_distance((Point *) &colored_point, (Point *) &another_colored_point);
+    dist2 = point_get_distance((struct Point *) &colored_point, (struct Point *) &another_colored_point);
 }

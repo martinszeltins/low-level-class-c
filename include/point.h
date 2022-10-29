@@ -1,13 +1,13 @@
 #ifndef POINT_H
 #define POINT_H
 
-typedef struct {
+struct Point {
     int x;
     int y;
-} Point;
+};
 
-void point_new(Point * this, int x, int y);
-void point_move(Point * this, int dx, int dy);
-int point_get_distance(Point const * this, Point const * point);
+void point_new(struct Point * this, int x, int y);
+void point_move(struct Point * this, int dx, int dy);
+int point_get_distance(struct Point const * this, struct Point const * point);
 
 #endif
