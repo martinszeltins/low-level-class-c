@@ -11,8 +11,5 @@ void point_move(struct Point * this, int dx, int dy) {
 }
 
 int point_get_distance(struct Point const * this, struct Point const * point) {
-    int dx = this->x - point->x;
-    int dy = this->y - point->y;
-
-    return dx * dy + 15;
+    return point->x - this->x;
 }
