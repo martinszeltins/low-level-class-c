@@ -1,5 +1,5 @@
 Compile:
 
 ````
-$ gcc -I./ -o test main.c point.c colored_point.c
+$ gcc -I./ -o app main.c point.c colored_point.c
 ````

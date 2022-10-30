@@ -3,20 +3,27 @@
 #include "include/colored_point.h"
 
 int main() {
-    struct Point foo, bar, tar;
-    int dist;
-    point_new(&foo, 0, 0);
-    point_new(&bar, 1, 1);
-    point_new(&tar, -1, 2);
-    dist = point_get_distance(&foo, &bar);
-    point_move(&tar, 2, 4);
-    dist = point_get_distance(&bar, &tar);
+    int distance;
+    struct Point point_one, point_two, point_three;
 
-    printf("%d", dist);
+    point_new(&point_one, 15, 20);
+    point_new(&point_two, 35, 40);
+    point_new(&point_three, 71, 62);
 
-    int dist2;
+    distance = point_get_distance(&point_one, &point_two);
+
+    point_move(&point_three, 21, 43);
+
+    distance = point_get_distance(&point_two, &point_three);
+
+    printf("distance: %d \n", distance);
+
+    // Colored Point
+    int distance2;
     struct ColoredPoint colored_point, another_colored_point;
 
-    colored_point_new(&colored_point, 0, 2, RED);
-    dist2 = point_get_distance((struct Point *) &colored_point, (struct Point *) &another_colored_point);
+    colored_point_new(&colored_point, 34, 21, RED);
+    distance2 = point_get_distance((struct Point *) &colored_point, (struct Point *) &another_colored_point);
+
+    printf("distance2: %d \n", distance);
 }
