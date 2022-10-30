@@ -8,8 +8,8 @@
 struct ColoredPoint {
     /**
      * You can implement inheritance by literally embedding the parent
-     * (Point) as the first member of the subclass (ColoredPoint). Such
-     * nesting of structures always aligns the first data member ‘parent’
+     * (Point) struct as the first member of the subclass (ColoredPoint).
+     * Such nesting of structures always aligns the first data member ‘parent’
      * at the beginning of every instance of the derived structure. This
      * alignment is guaranteed by the C standard. Specifically, WG14/N1124
      * Section 6.7.2.1.13 says: “A pointer to a structure object, suitably
