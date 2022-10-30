@@ -16,7 +16,7 @@ struct ColoredPoint {
      * converted, points to its initial member. There may be unnamed padding
      * within a structure object, but not at its beginning”. This alignment
      * lets you treat a pointer to the derived ColoredPoint struct as a pointer
-     * to the Point base struct. All this is legal, portable, and blessed by
+     * to the Point base struct. All this is legal, portable, and ok with
      * the Standard.
      * 
      * With this arrangement, you can always safely pass a pointer to
