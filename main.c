@@ -25,7 +25,8 @@ int main() {
     colored_point_new(&colored_point, 65, 82, RED);
     colored_point_new(&another_colored_point, 157, 120, RED);
 
-    distance2 = point_get_distance((struct Point *) &colored_point, (struct Point *) &another_colored_point);
+    distance2 = point_get_distance((struct Point *) &colored_point,
+                                   (struct Point *) &another_colored_point);
 
     printf("distance2: %d \n", distance2);
 }
